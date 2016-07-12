@@ -15,13 +15,48 @@ app.use('/', (req,res,next) => {
 })
 
 app.get('/profile', (req,res) => {
-  const name = {
+  const profile = {
     name: 'Li Min',
-    age: 31,
-    pet: 'nil',
-    gender: 'male'
+    race: 'Chinese',
+    gender: 'Female'
   }
-  res.status(200).json(name)
+  res.status(200).json(profile)
+})
+
+app.get('/links', (req,res) => {
+  const link = {
+    github: 'https://github.com/snowsandpatrol',
+    linkedin: 'https://sg.linkedin.com/in/lewlimin',
+    email: 'lewlimin@gmail.com'
+  }
+  res.status(200).json(link)
+})
+
+app.get('/skills', (req,res) => {
+  const skills = {
+    Javascript: 3,
+    RubyonRails: 3,
+    HTML: 6,
+    CSS: 6
+  }
+  res.status(200).json(skills)
+})
+
+app.get('/education', (req,res) => {
+  const education = {
+    University: "National University Singapore",
+    Major: "Marketing & Technology",
+    Certifications: "PMP, CBAP, Specialist Diploma in Statistics"
+  }
+  res.status(200).json(education)
+})
+
+app.get('/work', (req,res) => {
+  const work = {
+    Amdocs: "2013 to 2016",
+    Singtel: "2011 to 2013",
+  }
+  res.status(200).json(work)
 })
 
 app.get('/projects', (req,res) => {
@@ -34,13 +69,14 @@ app.get('/projects', (req,res) => {
   res.status(200).json(arrayOfProjects)
 })
 
-app.get('/hello', (req,res,next) => {
-  res.json({message: 'world'})
-})
 
-app.get('/profile', (req,res) => {
-  res.json({message: 'world'})
-})
+// app.get('/hello', (req,res,next) => {
+//   res.json({message: 'world'})
+// })
+//
+// app.get('/profile', (req,res) => {
+//   res.json({message: 'world'})
+// })
 
 
 app.listen(port, () => {
