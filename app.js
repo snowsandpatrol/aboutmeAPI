@@ -59,6 +59,14 @@ app.get('/work', (req,res) => {
   res.status(200).json(work)
 })
 
+app.get('/work/1', (req,res) => {
+  const work = {
+    Amdocs: "2013 to 2016",
+    Singtel: "2011 to 2013",
+  }
+  res.status(200).json(work)
+})
+
 app.get('/projects', (req,res) => {
   const project1 = new Project('aboutme','this is a project about me', 'google.com', 'cat')
   const project2 = new Project('aboutme','this is a project about x', 'google.com', 'cat')
