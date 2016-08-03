@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 mongoose.connect('mongodb://hello:hello@ds139675.mlab.com:39675/myapi-app')
 const port = process.env.PORT || 4000
 // const Project = require('./models/project')
-const router = express.Router()
+// const router = express.Router()
 const bodyParser = require('body-parser')
 var routes = require('./config/routes')
 
@@ -22,12 +22,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 // Allow cross-domain Ajax requests
-router.use(function (req, res, next) {
+app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next()
 })
-
 
 app.use(routes)
 
