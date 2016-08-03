@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node models/seed.js"
+    "seed": "node models/seed.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "jade": "~1.11.0",
     "method-override": "^2.3.4",
     "mongoose": "^4.5.3",
-    "mongoose-seed": "^0.3.0"
+    "mongoose-seed": "^0.3.0",
+    "morgan": "^1.7.0"
   }
 }
