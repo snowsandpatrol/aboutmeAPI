@@ -1,6 +1,6 @@
 //MULTIPLE
 
-var Project = require('../models/Project')
+var Project = require('../models/project')
 
 // GET
 function getallProject (request, response) {
