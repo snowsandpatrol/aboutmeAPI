@@ -12,9 +12,9 @@ function getallEducation (request, response) {
 
 // GET SINGLE Education
 function getEducation (request, response) {
-  var id = request.params.id
+  var index = request.params.index
 
-  Education.findOne(id, function (error, Education) {
+  Education.findOne({index: index}, function (error, Education) {
     console.log('Education')
     if (error) response.json({message: 'Could not find Education history b/c:' + error})
 

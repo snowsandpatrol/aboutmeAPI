@@ -12,11 +12,11 @@ function getallWork (request, response) {
 
 // GET SINGLE WORK
 function getWork (request, response) {
-  var id = request.params.id
+  var index = request.params.index
 
-  Work.findOne(id, function (error, work) {
-    console.log('work')
-    if (error) response.json({message: 'Could not find work history b/c:' + error})
+  Work.findOne({index: index}, function (error, work) {
+    console.log('Work')
+    if (error) response.json({message: 'Could not find Work history b/c:' + error})
 
     response.json({work: work})
   })

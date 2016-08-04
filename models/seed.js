@@ -30,6 +30,7 @@ var data = [
        'model': 'Education',
        'documents': [
            {
+               'index': '1',
                'institution_name': 'Doc1',
                'start_date': 200,
                'end_date': 200,
@@ -37,6 +38,7 @@ var data = [
            },
 
              {
+               'index': '2',
                'institution_name': 'Doc2',
                'start_date': 300,
                'end_date': 300,
@@ -68,16 +70,26 @@ var data = [
        'model': 'Work',
        'documents': [
            {
+             'index': '1',
                'employer_name': 'Employer1',
+               'start_date': '200',
+               'end_date': '200',
+
+           },
+
+             {
+               'index': '2',
+               'employer_name': 'Employer2',
                'start_date': '200',
                'end_date': '200',
            },
 
-             {
-               'employer_name': 'Employer2',
-               'start_date': '200',
-               'end_date': '200',
-           }
+              {
+                'index': '3',
+                'employer_name': 'Employer3',
+                'start_date': '300',
+                'end_date': '300',
+            }
        ]
    },
 

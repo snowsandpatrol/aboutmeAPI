@@ -2,6 +2,7 @@
 var mongoose = require('mongoose');
 
 var EducationSchema = mongoose.Schema({
+	index: String,
 	institution_name: String,
 	start_date: String,
   end_date: String,

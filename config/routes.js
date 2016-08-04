@@ -24,7 +24,7 @@ router.route('/education')
   //GET all education
   .get(educationController.getallEducation);
 
-  router.route('/education/:id')
+  router.route('/education/:index')
   //GET single education
   .get(educationController.getEducation);
 
@@ -60,7 +60,7 @@ router.route('/work')
   //GET all work
   .get(workController.getallWork);
 
-router.route('/work/:id')
+router.route('/work/:index')
 //GET single work
   .get(workController.getWork);
 
