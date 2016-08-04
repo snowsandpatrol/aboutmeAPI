@@ -44,7 +44,7 @@ router.route('/project')
   //GET all project
   .get(projectController.getallProject);
 
-router.route('/project/:id')
+router.route('/project/:index')
 //GET single project
   .get(projectController.getProject);
 

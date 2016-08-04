@@ -14,9 +14,9 @@ function getallProject (request, response) {
 
 // GET SINGLE Project
 function getProject (request, response) {
-  var id = request.params.id
+  var index = request.params.index
 
-  Project.findOne({_id: id}, function (error, Project) {
+  Project.findOne({index: index}, function (error, Project) {
     console.log('Project')
     if (error) response.json({message: 'Could not find Project history b/c:' + error})
 

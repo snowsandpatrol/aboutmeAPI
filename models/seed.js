@@ -49,12 +49,14 @@ var data = [
        'model': 'Project',
        'documents': [
            {
+              'index': '1',
                'project_name': 'Proj1',
                'project_description': '200',
                'project_link': '200',
            },
 
              {
+               'index': '2',
                'project_name': 'Proj2',
                'project_description': '300',
                'project_link': '300',
